@@ -22,10 +22,12 @@ function updateCaseTotal(newCaseInput) {
 document.getElementById('case-btn-plus').addEventListener('click', function() {
     const newCaseInput =  updateCaseBtnNumber(true)
     updateCaseTotal(newCaseInput)
+    calculateSubTotal()
     
 })
 document.getElementById('case-btn-minus').addEventListener('click', function() {
     const newCaseInput = updateCaseBtnNumber(false)
     updateCaseTotal(newCaseInput)
+    calculateSubTotal()
     
 })

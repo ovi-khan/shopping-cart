@@ -19,17 +19,18 @@ function updatePhoneTotalprise(newPhoneBtnInput) {
     PhoneTotalElement.innerText = totalPhonePrise
 }
 
+
 document.getElementById('phone-btn-plus').addEventListener('click', function() {
     const newPhoneBtnInput =  updatePhoneBtnInput(true)
     updatePhoneTotalprise(newPhoneBtnInput)
-    
-
+    calculateSubTotal()
     
 })
 
 document.getElementById('phone-btn-minus').addEventListener('click', function() {
     const newPhoneBtnInput = updatePhoneBtnInput(false)
     updatePhoneTotalprise(newPhoneBtnInput)
+    calculateSubTotal()
     
     
 })
